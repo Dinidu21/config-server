@@ -1,5 +1,6 @@
 server:
   port: 8888
+
 spring:
   application:
     name: config-server
@@ -8,6 +9,25 @@ spring:
       server:
         git:
           uri: https://github.com/Dinidu21/config-repo.git
+          cloneOnStart: false
+          timeout: 5
+          refreshRate: 3600
+
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  health:
+    livenessState:
+      enabled: false
+    readinessState:
+      enabled: false
+
 eureka:
   client:
     service-url:
