@@ -2,6 +2,13 @@
 
 Centralized external configuration server for the EventSphere microservices platform, built with **Spring Cloud Config Server**.
 
+## Student Information
+
+- **Student Name:** Dinidu Sachintha
+- **Student Number:** 241711028
+- **Slack Handle:** [U0BF767MA4S](https://ijse-eca-hdse-71-72.slack.com/team/U0BF767MA4S)
+- **GCP Project ID:** eventsphere-504909
+
 ## Overview
 
 The Config Server provides a centralized location for external configuration properties across all microservices. Configuration files are stored in a Git repository and served to client applications at runtime, enabling dynamic configuration updates without redeployment.
